@@ -9,7 +9,7 @@
     "test": "rimraf ./dist_spec && tsc -p tsconfig.spec.json && jasmine --config=./jasmine.json"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/express-serve-static-core": "^4.11.0",
     "@types/jasmine": "^2.8.4",
