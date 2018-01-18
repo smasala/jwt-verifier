@@ -1,0 +1,29 @@
+{
+  "name": "jwt-verifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "test": "rimraf ./dist_spec && tsc -p tsconfig.spec.json && jasmine --config=./jasmine.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express-serve-static-core": "^4.11.0",
+    "@types/jasmine": "^2.8.4",
+    "@types/node": "^9.3.0",
+    "jasmine": "^2.8.0",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.9.1",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "array-includes": "^3.0.3",
+    "atob": "^2.0.3",
+    "jsrsasign": "^8.0.4",
+    "lodash": "^4.17.4",
+    "rxjs": "^5.5.6"
+  }
+}

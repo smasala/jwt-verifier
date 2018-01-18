@@ -1,0 +1,50 @@
+{
+    "extends": "tslint:recommended",
+    "rules": {
+        "max-classes-per-file": [true, 1, "exclude-class-expressions"],
+        "no-unused-variable": true,
+        "interface-name": false,
+        "no-attribute-parameter-decorator": true,
+        "no-forward-ref": true,
+        "no-any": true,
+        "no-duplicate-variable": true,
+        "no-internal-module": true,
+        "no-console": false,
+        "ordered-imports": true,
+        "member-ordering": [
+            true,
+            {
+                "order": [
+                "public-static-field",
+                "public-instance-field",
+                "public-constructor",
+                "private-static-field",
+                "private-instance-field",
+                "private-constructor",
+                "public-instance-method",
+                "protected-instance-method",
+                "private-instance-method"
+                ]
+            }
+        ],
+        "no-invalid-this": [
+            true,
+            "check-function-in-method"
+        ],
+        "typedef": [
+            true,
+            "call-signature",
+            "parameter",
+            "member-variable-declaration",
+            "property-declaration",
+            "variable-declaration"
+        ],
+        "trailing-comma": [
+            false
+        ],
+        "variable-name": [
+            true,
+            "ban-keywords"
+        ]
+    }
+}
