@@ -4,6 +4,10 @@
   "description": "",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smasala/jwt-verifier.git"
+  },
   "scripts": {
     "build": "rimraf ./dist && tsc",
     "test": "rimraf ./dist_spec && tsc -p tsconfig.spec.json && jasmine --config=./jasmine.json"
