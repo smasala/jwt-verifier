@@ -38,16 +38,16 @@ JWTVerifier.verify(auth).subscribe((verified: boolean) => {});
     // Add express middleware to check auth token
     app.use((req, res, next) => {
     const auth: string = ExpressMiddleware.getAuthToken(req);
-    if (auth) {
-        JWTVerifier
-            .verify(auth).subscribe((verified: boolean) => {
-                console.info("Verified:", verified);
-                next();
-            });
-    } else {
-        // Unauthorized
-        res.sendStatus(401);
-    }
+        if (auth) {
+            JWTVerifier
+                .verify(auth).subscribe((verified: boolean) => {
+                    console.info("Verified:", verified);
+                    next();
+                });
+        } else {
+            // Unauthorized
+            res.sendStatus(401);
+        }
     });
 ```
 
